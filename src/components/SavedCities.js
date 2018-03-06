@@ -77,7 +77,7 @@ erase = (name) => () => {
                     temp={city.temp}
                     weather={city.weather}
                     date={city.date}
-                    url={"http://openweathermap.org/img/w/" + city.icon + ".png"}
+                    url={"https://openweathermap.org/img/w/" + city.icon + ".png"}
                     onClick={this.updateCurrent(city.name)}
                     text='Current weather'
                     erase={this.erase(city.name)}
