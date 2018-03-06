@@ -52,7 +52,7 @@ handleChange = (e) => {
     render() {
       return(
         <div className="container"> 
-        <h2> Weather app</h2>
+        <h1>Weather app</h1>
         <Notification message={this.props.store.getState().notify.text} color={this.props.store.getState().notify.color}/>
               <form>
                 <label ref="myRef">

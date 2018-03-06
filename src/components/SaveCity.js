@@ -48,7 +48,7 @@ class SaveCity extends React.Component{
         url = "https://openweathermap.org/img/w/" + this.props.store.getState().city.icon + ".png"
         return (
             <div className="container">
-            
+            <h2>Weather</h2>
              <Table>
               <tbody>
                 <tr>
