@@ -73,11 +73,7 @@ erase = (name) => () => {
                 {this.props.store.getState().cities.map(city =>
                     <CityRow
                     key={city.name}
-                    name={city.name}
-                    temp={city.temp}
-                    weather={city.weather}
-                    date={city.date}
-                    url={"https://openweathermap.org/img/w/" + city.icon + ".png"}
+                    city={city}
                     onClick={this.updateCurrent(city.name)}
                     text='Current weather'
                     erase={this.erase(city.name)}

@@ -60,12 +60,8 @@ class SaveCity extends React.Component{
                 <th>Save</th>
                 </tr>
                 <CityRow 
-                    name={this.props.store.getState().city.name}
-                    temp={this.props.store.getState().city.temp}
-                    weather={this.props.store.getState().city.weather}
-                    url={url}
+                    city={this.props.store.getState().city}
                     onClick={this.addCity()}
-                    date={this.props.store.getState().city.date}
                     text='Save'
                 />
                 </tbody>
